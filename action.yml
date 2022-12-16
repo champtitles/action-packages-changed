@@ -3,5 +3,6 @@ description: https://github.com/champtitles/action-packages-changed
 runs:
   using: "composite"
   steps:
-    - shell: bash
-      run: ${{ github.action_path }}/action.sh
+    - id: packages-generator
+      run: echo "packages-changed=$({{ github.action_path }}/action.sh)" >> $GITHUB_OUTPUT
+      shell: bash
