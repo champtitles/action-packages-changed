@@ -1,0 +1,7 @@
+name: packages-changed
+description: https://github.com/champtitles/lerna-packages-changed
+runs:
+  using: "composite"
+  steps:
+    - shell: bash
+      run: ${{ github.action_path }}/action.sh
