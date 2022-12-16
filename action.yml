@@ -1,5 +1,5 @@
 name: packages-changed
-description: https://github.com/champtitles/lerna-packages-changed
+description: https://github.com/champtitles/action-packages-changed
 runs:
   using: "composite"
   steps:
