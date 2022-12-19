@@ -5,5 +5,5 @@ runs:
   steps:
     - id: packages-generator
       run: | 
-        echo "PACKAGES_CHANGED=$(echo ${GITHUB_ACTION_PATH}/action.sh)" >> $GITHUB_ENV
+        echo "PACKAGES_CHANGED=$(echo ${{ GITHUB_ACTION_PATH }}/action.sh)" >> $GITHUB_ENV
       shell: bash
