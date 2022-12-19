@@ -1,5 +1,9 @@
 name: packages-changed
 description: https://github.com/champtitles/action-packages-changed
+outputs:
+  packages-changed:
+    description: "Packages changed"
+    value: ${{ steps.packages-generator.outputs.packages-changed }}
 runs:
   using: "composite"
   steps:
