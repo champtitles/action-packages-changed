@@ -8,5 +8,5 @@ runs:
   using: "composite"
   steps:
     - id: packages-generator
-      run: ${{ github.action_path }}/action.sh
+      run: echo "packages-changed=$({{ github.action_path }}/action.sh)" >> $GITHUB_OUTPUT
       shell: bash
