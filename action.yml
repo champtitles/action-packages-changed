@@ -4,5 +4,6 @@ runs:
   using: "composite"
   steps:
     - id: packages-generator
-      run: echo "PACKAGES_CHANGED=$({{ github.action_path }}/action.sh)" >> $GITHUB_ENV
+      run: | 
+        echo "PACKAGES_CHANGED=$({{ github.action_path }}/action.sh)" >> $GITHUB_ENV
       shell: bash
